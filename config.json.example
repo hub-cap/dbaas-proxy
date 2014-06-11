@@ -1,0 +1,11 @@
+{
+  "PortLimit": 50,
+  "auth": {
+    "Endpoint": "https://identity.api.rackspacecloud.com",
+    "Region": "ORD",
+    "AdminUser": "admin",
+    "AdminPassword": "password",
+    "LBaaSUser": "user",
+    "LBaaSPassword": "password"
+  }
+}
