@@ -1,11 +1,17 @@
 {
-  "PortLimit": 50,
+  "portLimit": 50,
   "auth": {
-    "Endpoint": "https://identity.api.rackspacecloud.com",
-    "Region": "ORD",
-    "AdminUser": "admin",
-    "AdminPassword": "password",
+    "endpoint": "https://identity.api.rackspacecloud.com",
+    "region": "ORD",
+    "adminUser": "admin",
+    "adminPassword": "password",
     "LBaaSUser": "user",
     "LBaaSPassword": "password"
+  },
+  "mysql": {
+    "host": "localhost",
+    "user": "user",
+    "password": "password",
+    "database": "lbaasproxy"
   }
 }
