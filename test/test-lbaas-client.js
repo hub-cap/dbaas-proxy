@@ -40,3 +40,22 @@ module.exports.testFailureToProvisionChildLoadBalancer = function(test) {
 
   test.done();
 }
+
+module.exports.testSaveChildLoadBalancer = function(test) {
+
+  var mock = new mocks.BasicLBMock.LBClient();
+  mock._saveChildLoadBalancer(state, function(err, data) {
+    test.assertEqual(err, null);
+    test.assertNotEqual(state.childLoadBalancer.insertId, null);
+  });
+  test.done();
+}
+
+module.exports.testDuplicatePortsLoadBalancer = function(test) {
+  var mock = new mocks.DupPortLBMock.LBClient();
+  mock._saveChildLoadBalancer(state, function(err, data) {
+    test.assertEqual(err, null);
+    test.assertNotEqual(state.childLoadBalancer.insertId, null);
+  });
+  test.done();
+}
