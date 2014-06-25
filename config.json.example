@@ -16,5 +16,9 @@
   },
   "logger": {
     "logfile": "./output.log"
+  },
+  "redis": {
+    "host": "localhost",
+    "port": "6379"
   }
 }
