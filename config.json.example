@@ -17,8 +17,22 @@
   "logger": {
     "logfile": "./output.log"
   },
-  "redis": {
-    "host": "localhost",
-    "port": "6379"
-  }
+  "sentinel-monitor": {
+    "host": "host",
+    "port": "26379"
+  },
+  "sentinels": [
+    {
+      "host": "host1",
+      "port": "26379"
+    },
+    {
+      "host": "host2",
+      "port": "26379"
+    },
+    {
+      "host": "host3",
+      "port": "26379"
+    }
+  ]
 }
