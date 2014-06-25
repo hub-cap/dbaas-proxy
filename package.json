@@ -31,6 +31,7 @@
     "pkgcloud": "^0.9.6",
     "proxyquire": "^1.0.1",
     "redis": "^0.10.3",
+    "redis-sentinel": "^0.1.0",
     "restler": "^3.2.2",
     "tape": "^2.13.2",
     "through": "^2.3.4",
