@@ -34,5 +34,12 @@
       "host": "host3",
       "port": "26379"
     }
-  ]
+  ],
+  "dns": {
+    "user": "dns-user",,
+    "authkey": "some-key",
+    "domainID": "ID-FROM-ZONE",
+    "domain": "somedomain.com",
+    "endpoint": "https://identity.api.rackspacecloud.com"
+  }
 }
