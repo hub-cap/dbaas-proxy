@@ -11,7 +11,7 @@ DBAASPROXYLIBDIR ?= $(LIBDIR)/$(NODEJS)
 
 BUILDDIR = dist
 
-BIN=bin/api.js
+BIN=bin/dbaas-proxy-api.js
 LINTSOURCES=$(shell find bin lib -name '*.js' -print)
 TESTSOURCES=$(shell find test -name 'test*.js' -print)
 
