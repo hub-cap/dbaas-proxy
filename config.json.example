@@ -1,5 +1,6 @@
 {
   "portLimit": 50,
+  "listenPort": 9000,
   "auth": {
     "endpoint": "https://identity.api.rackspacecloud.com",
     "region": "ORD",
@@ -36,7 +37,7 @@
     }
   ],
   "dns": {
-    "user": "dns-user",,
+    "user": "dns-user",
     "authkey": "some-key",
     "domainID": "ID-FROM-ZONE",
     "domain": "somedomain.com",
