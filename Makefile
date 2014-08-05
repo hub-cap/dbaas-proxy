@@ -25,8 +25,8 @@ build: $(wildcard lib/*.js)
 	find $(INSTALLPATH)/node_modules -type f -exec chmod 644 {} \;
 	find $(INSTALLPATH)/lib -type f -exec chmod 644 {} \;
 	mkdir -p $(BUILDDIR)/usr/bin/
-	ln -s ../lib/nodejs/dbaas-proxy/bin/dbaas-proxy-api.js dist/usr/bin/dbaas-proxy-api.js
-	ln -s ../lib/nodejs/dbaas-proxy/bin/dbaas-proxy-monitor.js dist/usr/bin/dbaas-proxy-monitor.js
+	ln -s ../lib/nodejs/dbaas-proxy/bin/dbaas-proxy-api.js dist/usr/bin/dbaas-proxy-api
+	ln -s ../lib/nodejs/dbaas-proxy/bin/dbaas-proxy-monitor.js dist/usr/bin/dbaas-proxy-monitor
 	mkdir -p $(BUILDDIR)/etc/init.d/
 	cp dbaas-proxy-api.init.d $(BUILDDIR)/etc/init.d/dbaas-proxy-api
 	cp dbaas-proxy-monitor.init.d $(BUILDDIR)/etc/init.d/dbaas-proxy-monitor
