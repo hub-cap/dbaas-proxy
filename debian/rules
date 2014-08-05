@@ -1,0 +1,9 @@
+#!/usr/bin/make -f
+
+%:
+
+	dh $@
+
+override_dh_auto_install:
+	$(MAKE) DBAASPROXYLIBDIR=$$(pwd)/debian/dbaas-proxy PREFIX=/opt install
+	#$(MAKE) DBAASPROXYLIBDIR=$$(pwd)/debian/usr/lib/nodejs/dbaas-proxy PREFIX=/opt install

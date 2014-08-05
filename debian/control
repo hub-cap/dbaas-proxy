@@ -1,0 +1,12 @@
+Source: dbaas-proxy
+Maintainer: Edward Konetzko <ekonetzk@rackspace.com>
+Section: misc
+Priority: optional
+Standards-Version: 3.9.2
+Build-Depends: debhelper (>= 9)
+
+Package: dbaas-proxy
+Architecture: amd64
+Depends: nodejs, nodejs-legacy
+Description: dbaas proxy
+ dbaas proxy software
