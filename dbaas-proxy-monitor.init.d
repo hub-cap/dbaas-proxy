@@ -1,10 +1,10 @@
 #!/bin/sh
 ### BEGIN INIT INFO
-# Provides:          dbaas-proxy-api
+# Provides:          dbaas-proxy-monitor
 # Required-Start:    $network $local_fs
 # Required-Stop:
-# Default-Start:     2 3 4 5
-# Default-Stop:      0 1 6
+# Default-Start:     
+# Default-Stop:      0 1 2 3 4 5 6
 # Short-Description: <Enter a short description of the software>
 # Description:       <Enter a long description of the software>
 #                    <...>
@@ -15,9 +15,9 @@
 
 # PATH should only include /usr/* if it runs after the mountnfs.sh script
 PATH=/sbin:/usr/sbin:/bin:/usr/bin
-DESC=dbaas-proxy-api             # Introduce a short description here
-NAME=dbaas-proxy-api             # Introduce the short server's name here
-DAEMON=/usr/bin/dbaas-proxy-api # Introduce the server's location here
+DESC=dbaas-proxy-monitor             # Introduce a short description here
+NAME=dbaas-proxy-monitor             # Introduce the short server's name here
+DAEMON=/usr/bin/dbaas-proxy-monitor # Introduce the server's location here
 DAEMON_ARGS=""             # Arguments to run the daemon with
 PIDFILE=/var/run/$NAME.pid
 SCRIPTNAME=/etc/init.d/$NAME
