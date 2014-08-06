@@ -1,0 +1,22 @@
+To build an updated package run the following commands
+
+#This will build the orginal tar ball from the master branch
+# needed for the next steps to build correctly also if you dont update this file
+# between builds the build process will make diff patchs between the orginal 
+# source tarball and your working data
+
+git archive --format=tar --prefix=dbaas-proxy/ master | gzip > ../dbaas-proxy_0.1.orig.tar.gz
+
+#inside of the root dir of this git repo run the following command 
+# and update comment.  This will also auto update the revision number.  Since this software wont make it past v0.1 there is no point to change those numbers.
+
+dch -i
+
+
+#commit this change back up to the git repo so everyone can be on the correct version when building
+
+#After all this run the following command to build the packages
+debuild -us -uc
+
+That should be all you need to do :D
+
